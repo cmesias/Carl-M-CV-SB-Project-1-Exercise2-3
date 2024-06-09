@@ -14,7 +14,7 @@ body {
     /*background: linear-gradient(rgb(19, 19, 19), rgb(0, 63, 55), rgb(19, 19, 19));*/
     background-color:rgb(19, 19, 19);
     color: rgb(31, 253, 31);
-    line-height: 32px;
+    line-height: 30px;
     border: green 5px solid;        /* adds a green 5px border around the body */
     margin: 32px;
     padding: 32px;
@@ -24,33 +24,6 @@ body {
 a {
     text-decoration: none;
     color: rgb(154, 255, 175);
-}
-
-/* This will add a background image to my about-me section */
-/* #about-me {
-    background-image: url("https://images.unsplash.com/photo-1641002921619-4db51d58c21f?q=80&w=2564&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-    background-size:cover;
-} */
-
-/* This will center items (img tag) inside this div element */
-/* #container-picture {
-    display: flex;
-    justify-content: center;
-} */
-
-/* This will make an oval shaped border around my image */
-.container-picture > img {
-    border-radius: 50% / 50%;
-    border: rgb(255, 255, 255) 2px solid;
-
-    /* Creates a transition of 0.4s back to normal size */
-    transition-duration: 0.4s;
-    height: 450px;
-}
-
-/* This will make an oval shaped border around my image */
-.container-picture > img:hover {
-    border-radius: 5% / 5%;
 }
 
 /* This wil set the font weight for <p>, <li> and <td> elements in one css rule */
@@ -63,36 +36,52 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Center <h1> element */
+/****************************************************/
+/*          Picture, Name & Contact info            *
+ * Set display as flex, and set as space-between to *
+ * space out the three items inside this div        *
+ *                                                  *
+ */
+.about-me {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 64px;
+    height: 450px;
+}
+
+/* Set profile picture perfectly rounded */
+.about-me img {
+    border-radius: 50%;
+    border: rgb(31, 253, 31) 2px dotted;
+    height: 350px;
+}
+
+/* Center h1 tag */
+.container-h1, .contact {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Center h1 in section */
+.container-h1 {
+    justify-content: center;
+}
+
+/* Center h1 tag */
 h1 {
     font-size: 3rem;
-    text-align: center;
     text-shadow: 5px 5px 10px rgb(31, 253, 31, 0.7);
-    transition-duration: 0.4s;
-
-    /* This is how to prevent elements below it from moving */
-	margin-top: 32px;
-	margin-bottom: 32px;
 }
 
-/* Add hover effects for <h1> element */
-h1:hover {
-    font-size: 6rem;
+/* Set contact information to bottom right */
+.contact {
+    justify-content: flex-end;
 }
 
-/* Set contact <p> elements margin & font-size */
-.contact > p {
+/* Set contact information to bottom right */
+.contact p {
     font-size: 1rem;
-    transition-duration: 0.4s;
-    
-    /* Adding these two lines below will prevent elements under it from moving downwards */
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-/* Add hover effects for contact <p> elements */
-.contact > p:hover {
-    font-size: 2rem;
+    line-height: 0px;
 }
 
 /* Set all h2 elements to uppercase */
