@@ -1,0 +1,185 @@
+/* Use border-box in all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Set the font family to 'Plus Jakarta Sans' from google fonts and set it to a weight of 700 */
+html {
+    font-family: "Plus Jakarta Sans", Arial, sans-serif;
+    font-weight: 700;
+}
+
+/* Set the body style */
+body {
+    /*background: linear-gradient(rgb(19, 19, 19), rgb(0, 63, 55), rgb(19, 19, 19));*/
+    background-color:rgb(19, 19, 19);
+    color: rgb(31, 253, 31);
+    line-height: 32px;
+    border: green 5px solid;        /* adds a green 5px border around the body */
+    margin: 32px;
+    padding: 32px;
+}
+
+/* Remove underline from anchors */
+a {
+    text-decoration: none;
+    color: rgb(154, 255, 175);
+}
+
+/* This will add a background image to my about-me section */
+/* #about-me {
+    background-image: url("https://images.unsplash.com/photo-1641002921619-4db51d58c21f?q=80&w=2564&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size:cover;
+} */
+
+/* This will center items (img tag) inside this div element */
+/* #container-picture {
+    display: flex;
+    justify-content: center;
+} */
+
+/* This will make an oval shaped border around my image */
+.container-picture > img {
+    border-radius: 50% / 50%;
+    border: rgb(255, 255, 255) 2px solid;
+
+    /* Creates a transition of 0.4s back to normal size */
+    transition-duration: 0.4s;
+    height: 450px;
+}
+
+/* This will make an oval shaped border around my image */
+.container-picture > img:hover {
+    border-radius: 5% / 5%;
+}
+
+/* This wil set the font weight for <p>, <li> and <td> elements in one css rule */
+p, li, td {
+    font-weight: 300;
+}
+
+/* Add an underline when hovering anchors */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Center <h1> element */
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 5px 5px 10px rgb(31, 253, 31, 0.7);
+    transition-duration: 0.4s;
+
+    /* This is how to prevent elements below it from moving */
+	margin-top: 32px;
+	margin-bottom: 32px;
+}
+
+/* Add hover effects for <h1> element */
+h1:hover {
+    font-size: 6rem;
+}
+
+/* Set contact <p> elements margin & font-size */
+.contact > p {
+    font-size: 1rem;
+    transition-duration: 0.4s;
+    
+    /* Adding these two lines below will prevent elements under it from moving downwards */
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Add hover effects for contact <p> elements */
+.contact > p:hover {
+    font-size: 2rem;
+}
+
+/* Set all h2 elements to uppercase */
+h2 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+/* Apply padding to headers to provide spacing and ensure content doesn't feel cramped */
+h1, h2, h3 {
+    padding-bottom: 2rem;
+}
+
+/* For all table head elements */
+/* Sets font size to be 1.3 times html's font size */
+th {
+    font-size: 1.2rem;
+}
+
+/* This will implement the css box-model such as margin, padding & border into each section */
+.sections {
+    /* Add a border below each section */
+    border-bottom: green 5px solid;
+    padding-top: 32px;
+    padding-bottom: 64px;
+}
+
+/****************** Adjusted form below to capture the same look and feel of example ******************/
+
+/* Adds padding on the left side of the checkbox questions */
+.checkbox-questions {
+    padding-left: 32px;
+}
+
+/* Removes margins */
+.checkbox-questions > p {
+    margin: 0;
+}
+
+/* Add css stylng to buttons */
+button {
+    /* makes the button transparent */
+    background-color: rgba(255,255,255, 0);
+    transition-duration: 0.4s;
+
+    /* removes default borders */
+    border: rgb(31, 253, 31) 2px solid;
+
+    color: rgb(31, 253, 31);
+    padding: 10px;
+}
+
+/* Remove outlines on all decendants of form element */
+form * {
+    outline: none;
+}
+
+/* Add css stylng to buttons on hover */
+button:hover {
+    /* makes the button green*/
+    background-color: rgb(31, 253, 31);
+    color: black;
+    /* makes the button green*/
+    transform: translateY(4px);
+}
+
+/* Add css stylng to buttons on active (being clicked) */
+button:active {
+    background-color: rgb(8, 99, 8);
+}
+
+/* Set a dotted border around our textarea, inputs that have type text and our select element */
+.form-text {
+    background-color: rgba(19, 19, 19);
+    border: rgb(31, 253, 31), 1px dotted;
+    color: rgb(31, 253, 31);
+    margin-left: 6px;
+}
+
+/* Set textarea & input placeholder text color to half transparent */
+textarea::placeholder, input::placeholder {
+    color: rgb(31, 253, 31, 0.4);
+}
+
+/* Add padding-bottom to socials section */
+.socials {
+    padding-bottom: 96px;
+}
+
+/****************** Adjusted form below to capture the same look and feel of example ******************/
