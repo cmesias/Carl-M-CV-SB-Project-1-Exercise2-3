@@ -96,6 +96,47 @@ h1 {
     justify-content: center;
 }
 
+/* Projects */
+.game-div {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+/* Project images */
+.game-div > div > img {
+    height: 120px;
+}
+
+/* Projects */
+.game-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    width: 100%;
+}
+
+/* Projects */
+.game-header > div > h3 {
+    position: absolute;
+    top: 0;
+    margin: 0;
+}
+
+/* Projects */
+.game-header > div > p {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+}
+
+/* Small message below projects */
+.message {
+    display: flex;
+    justify-content: flex-end;
+}
+
 /* Set all h2 elements to uppercase */
 h2 {
     text-transform: uppercase;
