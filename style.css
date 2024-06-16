@@ -90,6 +90,12 @@ h1 {
     justify-content: space-between;
 }
 
+/* Center tools table*/
+#Tools {
+    display: flex;
+    justify-content: center;
+}
+
 /* Set all h2 elements to uppercase */
 h2 {
     text-transform: uppercase;
