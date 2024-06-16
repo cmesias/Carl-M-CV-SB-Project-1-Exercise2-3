@@ -192,6 +192,32 @@ form * {
     outline: none;
 }
 
+.container-forms {
+    display: flex;
+    justify-content: center;
+}
+
+.form-items {
+    display: flex;
+    width: 600px;
+    border: 1px rgb(0, 255, 64) solid;
+    /* This is only here so I can see the border colors for labels and inputs */
+    padding: 10px;
+}
+
+/* TODO [ ] -This isn't working as intended, this was supposed to put the position on the far left of the container-form div */
+.labels {
+    align-self: flex-start;
+    border: 1px rgb(0, 140, 255) solid;
+}
+
+/* TODO [ ] -This isn't working as intended, this was supposed to put the position on the far right of the container-form div
+   but it's not working. */
+.inputs {
+    align-self: flex-end;
+    border: 1px rgb(255, 0, 0) solid;
+}
+
 /* Add css stylng to buttons on hover */
 button:hover {
     /* makes the button green*/
