@@ -84,6 +84,12 @@ h1 {
     line-height: 0px;
 }
 
+/* Format each section under technologies in flexbox, row, and space-between */
+#Technologies {
+    display: flex;
+    justify-content: space-between;
+}
+
 /* Set all h2 elements to uppercase */
 h2 {
     text-transform: uppercase;
