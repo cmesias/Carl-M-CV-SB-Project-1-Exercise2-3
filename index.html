@@ -278,8 +278,8 @@
         <!-- Container for forms -->
         <div class="container-forms">
           <form action="#" method="get">
-            <!-- Name -->
 
+            <!-- Name -->
             <!-- container -->
             <div class="form-items">
               <!-- label -->
@@ -291,32 +291,61 @@
                 <input class="form-text" type="text" name="name" id="name" placeholder="Jean Doe" required>
               </div>
             </div>
-            <br>
 
             <!-- Email -->
-            <label for="email">Email: </label>
-            <input class="form-text" type="text" name="email" id="email" placeholder="JeanDoe@gmail.com" required>
-            <br>
+            <div class="form-items">
+              <!-- label -->
+              <div class="labels">
+                <label for="email">Email: </label>
+              </div>
+              <!-- input -->
+              <div class="inputs">
+                <input class="form-text" type="text" name="email" id="email" placeholder="JeanDoe@gmail.com" required>
+              </div>
+            </div>
 
             <!-- Organization -->
-            <label for="organization">Organization: </label>
-            <input class="form-text" type="text" name="organization" id="organization" placeholder="Amazon" required>
-            <br>
+            <div class="form-items">
+              <!-- label -->
+              <div class="labels">
+                <label for="organization">Organization: </label>
+              </div>
+              <!-- input -->
+              <div class="inputs">
+                <input class="form-text" type="text" name="organization" id=" organization" placeholder="Amazon" required>
+              </div>
+            </div>
 
             <!-- Role -->
-            <label for="role">Role: </label>
-            <input class="form-text" type="text" name="role" id="role" placeholder="Software Engineer" required>
-            <br>
+            <div class="form-items">
+              <!-- label -->
+              <div class="labels">
+                <label for="role">Role: </label>
+              </div>
+              <!-- input -->
+              <div class="inputs">
+                <input class="form-text" type="text" name="role" id="role" placeholder="Software Engineer" required>
+              </div>
+            </div>
 
             <!-- Reason for Contact -->
-            <label for="reason">Reason for contact: </label>
-            <select class="form-text" name="reason" id="reason" required>
-              <option value="">--Choose a reason--</option>
-              <option value="intern">Internship Offer</option>
-              <option value="job">Job Offer</option>
-              <option value="job">Hackathon</option>
-              <option value="connect">Connect!</option>
-            </select>
+            <div class="form-items">
+              <!-- label -->
+              <div class="labels">
+                <label for="reason">Reason for contact: </label>
+              </div>
+  
+              <!-- input -->
+              <div class="inputs">
+                <select class="form-text" name="reason" id="reason" required>
+                  <option value="">--Choose a reason--</option>
+                  <option value="intern">Internship Offer</option>
+                  <option value="job">Job Offer</option>
+                  <option value="job">Hackathon</option>
+                  <option value="connect">Connect!</option>
+                </select>
+              </div>
+            </div>
             
             <!-- Checkbox Question -->
             <div class="checkbox-questions">
@@ -339,30 +368,47 @@
             </div>
 
             <!-- Message -->
-            <p>Message:</p>
-            <label for="msg"></label>
-            <textarea class="form-text" placeholder="I would like to connect about creating a mobile game about hotdogs!" 
-                      name="msg" id="msg" 
-                      cols="100" rows="10"
-                      minlength="5"
-                      maxlength="1000" 
-                      required></textarea>
-            <br>
 
-            <!-- Clear text Button-->
-            <!-- We have to specify the type of button, otherwise it would be type ="submit" which would refresh the page instead of clearing the textarea -->
-            <!-- onclick - Event listner -->
-            <button type="button" onclick="document.getElementById('msg').value = ''">
-              Clear
-            </button>
+            <!-- Role -->
+            <div class="form-items">
+              <!-- label -->
+              <div class="labels">
+                <p>Message:</p>
+                <label for="msg"></label>
+              </div>
+              <!-- input -->
+              <div class="inputs">
+                
+                <!-- Text area for message -->
+                <textarea class="form-text" placeholder="I would like to connect about creating a mobile game about hotdogs!" 
+                name="msg" id="msg" 
+                cols="100" rows="10"
+                minlength="5"
+                maxlength="1000" 
+                required></textarea>
+                <br>
 
-            <button type="reset">
-              Clear All
-            </button>
+                <div class="btns">
+                  <!-- Clear Button -->
+                  <button type="button" onclick="document.getElementById('msg').value = ''">
+                    Clear
+                  </button>
+                  <!-- Reset Button -->
+                  <button type="reset">
+                    Clear All
+                  </button>
+                  <!-- Submit Button -->
+                  <button type="submit">Submit</button>
+                </div>
+              </div>
+            </div>
 
-            <!-- Submit Button -->
-            <button type="submit">Submit</button>
-            <br>
+
+
+
+
+
+
           </form>
         </div>
       </section>
@@ -385,7 +431,7 @@
             </li>
           </ul>
         </nav>
-        <p><b>Website</b> <a href="#"><b>repo</b></a></p>
+        <p><b>Website</b> <a href="https://github.com/cmesias/Carl-M-CV-SB-Project-1-Exercise2-3"><b>repo</b></a></p>
         <p>Learn more about my journey with <a href="https://www.springboard.com/workshops/software-development-career-program/learn#/dashboard">Springboard</a>.</p>
       </section>
     </footer>
